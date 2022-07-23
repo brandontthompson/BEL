@@ -1,0 +1,10 @@
+class Parser {
+    constructor(){
+
+    }
+
+    parse(){
+        
+    }
+    
+}

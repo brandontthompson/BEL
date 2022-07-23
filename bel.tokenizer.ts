@@ -79,7 +79,8 @@ class Tokenizer {
             if(tokenValue == null) continue;
 
             // re-write so its not recursive 
-            if(tokenType === TokenType.WHITESPACE) return this.getNextToken();
+            // we can just remove all whitespace beforehand since bel will not use whitespace for anything
+            if(tokenType === TokenType.WHITESPACE) continue;
 
             tokens.push({
                 type: tokenType,
